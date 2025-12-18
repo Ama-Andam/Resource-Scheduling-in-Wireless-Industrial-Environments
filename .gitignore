@@ -1,0 +1,43 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.fseventsd
+.Spotlight-V100
+.Trashes
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+.env.*
+*.env
+.pytest_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+.cache/
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb~
+
+# VS Code
+.vscode/
+
+# Arduino build artifacts
+*.hex
+*.elf
+*.bin
