@@ -129,6 +129,80 @@ This will:
 
 ---
 
+## Visual Results
+
+### Scheduling Timeline Comparison
+
+**EDF Gantt Chart** - Optimal scheduling with earliest deadline priority:
+![EDF Gantt Chart](edf_gantt_chart.png)
+
+**RM Gantt Chart** - Rate monotonic scheduling (period-based priority):
+![RM Gantt Chart](rm_gantt_chart.png)
+
+**FIFO Gantt Chart** - First-come-first-served (no prioritization):
+![FIFO Gantt Chart](fifo_gantt_chart.png)
+
+### Response Time Distribution
+
+![Response Time Distribution](response_time_distribution.png)
+
+Shows latency distribution across all jobs. EDF concentrates responses at lower latencies for critical tasks.
+
+### Performance Metrics Comparison
+
+![Scheduling Comparison Metrics](scheduling_comparison_metrics.png)
+
+Overall performance metrics side-by-side across all three algorithms.
+
+### Per-Task Performance Breakdown
+
+![Task Statistics Comparison](task_statistics_comparison.png)
+
+Detailed breakdown of each task's performance under different schedulers.
+
+### Latency Analysis - M2M Traffic Classification
+
+![Latency Analysis M2M](latency_analysis_m2m.png)
+
+Shows how EDF optimizes latency for delay-sensitive tasks (PIR, Button, Ultra) and delay-tolerant tasks (Sound).
+
+### Latency Over Time - Heatmap
+
+![Latency Heatmap](latency_heatmap.png)
+
+Time-based latency patterns showing when latency spikes occur and which tasks are affected.
+
+### Deadline Miss Timeline
+
+![Deadline Miss Timeline](deadline_miss_timeline.png)
+
+Timeline visualization showing when jobs miss their deadlines (FIFO shows significant failures).
+
+### Utility Analysis
+
+**Hard/Soft/Firm Real-Time Utility Models:**
+![Utility Curves](utility_curves.png)
+
+**Per-Task Utility Breakdown:**
+![Per-Task Utility](per_task_utility.png)
+
+**Cumulative System Utility:**
+![Cumulative Utility](cumulative_utility.png)
+
+### Schedulability Analysis
+
+![Schedulability Analysis](schedulability_analysis.png)
+
+Shows how each algorithm performs relative to theoretical CPU utilization bounds (EDF at 100%, RM at 75.68%).
+
+### Quality of Service Metrics
+
+![QoS Metrics](qos_metrics.png)
+
+Quality of service comparison showing EDF maintains higher QoS across all metrics.
+
+---
+
 ## Output Files
 
 ### CSV Results
